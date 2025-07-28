@@ -1,0 +1,28 @@
+# Linux Hardening Audit Tool
+
+## 📌 Introduction
+In cybersecurity, securing operating systems is critical. This project builds a Bash script to audit key Linux security configurations to help system administrators harden their systems.
+
+## ⚙️ Abstract
+This Linux Hardening Audit Tool automates checks for firewall configuration, unused services, SSH security, file permissions, and rootkit detection. The goal is to identify vulnerabilities and suggest mitigation steps.
+
+## 🛠 Tools Used
+- Bash scripting
+- Linux CLI tools:
+  - ufw – firewall status
+  - systemctl – list running services
+  - grep – parse config files
+  - ls – check file permissions
+  - rkhunter – detect rootkits
+
+## 📋 Steps Involved
+1. Created Bash script to run security checks.
+2. Checked firewall status using ufw status.
+3. Listed running services with systemctl list-units.
+4. Verified SSH root login settings using grep on /etc/ssh/sshd_config.
+5. Checked file permissions of critical files (/etc/passwd, /etc/shadow).
+6. (Optional) Detected rootkits using rkhunter.
+7. Saved audit output to audit_report.txt for review.
+
+## ✅ Conclusion
+The tool helps quickly assess a Linux system's security posture, highlighting areas to harden. While simple, it promotes best practices and awareness in system administration.
